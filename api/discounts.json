@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "name": "0",
+    "description": "0% discount for customers"
+  },
+  {
+    "id": 2,
+    "name": "10",
+    "description": "minimum discount for clients of 10%"
+  },
+  {
+    "id": 3,
+    "name": "20",
+    "description": "average customer discount 20%"
+  },
+  {
+    "id": 4,
+    "name": "25",
+    "description": "average customer discount 25%"
+  },
+  {
+    "id": 5,
+    "name": "35",
+    "description": "35% discount for customers"
+  },
+  {
+    "id": 6,
+    "name": "50",
+    "description": "50% discount for customers"
+  },
+  {
+    "id": 7,
+    "name": "75",
+    "description": "75% discount for customers"
+  }
+]

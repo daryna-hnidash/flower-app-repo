@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "name": "Summer",
+    "description": "Bouquets and vases with pleasant light colors and summer flowers"
+  },
+  {
+    "id": 2,
+    "name": "Autumn",
+    "description": "Autumn colors and pink decoration"
+  },
+  {
+    "id": 3,
+    "name": "Winter",
+    "description": "White decoration and hints of winter"
+  },
+  {
+    "id": 4,
+    "name": "Spring",
+    "description": "Spring flowers in light decorated"
+  }
+]

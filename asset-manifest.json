@@ -1,0 +1,43 @@
+{
+  "files": {
+    "main.css": "./static/css/main.fade87d6.css",
+    "main.js": "./static/js/main.e3ee0bb9.js",
+    "static/media/header.jpg": "./static/media/header.464be4c95040075211ec.jpg",
+    "static/media/Outfit-VariableFont_wght.ttf": "./static/media/Outfit-VariableFont_wght.00c2ed1a3bf798b0da27.ttf",
+    "static/media/SedanSC-Regular.ttf": "./static/media/SedanSC-Regular.3eeb672805f1b8adae1d.ttf",
+    "static/media/logo-bg.png": "./static/media/logo-bg.6ef52c733630541a0ca7.png",
+    "static/media/logo-bg-white.svg": "./static/media/logo-bg-white.3d863255af3486ac480c.svg",
+    "static/media/phone.svg": "./static/media/phone.9d8be0ea16e352f9aaa5.svg",
+    "static/media/instagram.svg": "./static/media/instagram.e684badd8b4b132b0fee.svg",
+    "static/media/trash.svg": "./static/media/trash.e4988bb93047df5ea4aa.svg",
+    "static/media/heart-white.svg": "./static/media/heart-white.205cfe984ec2c2152ff2.svg",
+    "static/media/heart.svg": "./static/media/heart.89888ec0f00afc9490cb.svg",
+    "static/media/person.svg": "./static/media/person.c718f2d8cd8689194599.svg",
+    "static/media/heart-btn.svg": "./static/media/heart-btn.4c328557b6761d98d22c.svg",
+    "static/media/person-white.svg": "./static/media/person-white.217dbd6bacfcf1360f63.svg",
+    "static/media/cart-white.svg": "./static/media/cart-white.bfb8a14f5aeb18e486b3.svg",
+    "static/media/cart.svg": "./static/media/cart.3f7cc8e640090b99b5ef.svg",
+    "static/media/search-white.svg": "./static/media/search-white.70492ebf9d3d7da8a25c.svg",
+    "static/media/search.svg": "./static/media/search.dc66c2306a1872a75120.svg",
+    "static/media/logout.svg": "./static/media/logout.25ad890ccea657032ed5.svg",
+    "static/media/email.svg": "./static/media/email.2a623c73db53398c50ec.svg",
+    "static/media/password.svg": "./static/media/password.a068d25ab373ba13a81a.svg",
+    "static/media/cross.svg": "./static/media/cross.207a6af378e93edb000f.svg",
+    "static/media/telegram.svg": "./static/media/telegram.e15472b166263276393c.svg",
+    "static/media/heart-btn-fill.svg": "./static/media/heart-btn-fill.e20bfeb7983bf26ed2da.svg",
+    "static/media/arrow-right-red.svg": "./static/media/arrow-right-red.f56ecf8e63ba740aee58.svg",
+    "static/media/arrow-right.svg": "./static/media/arrow-right.aac0c374a1e14a4f2f44.svg",
+    "static/media/dropdown.svg": "./static/media/dropdown.592d3d1eb07065855c3d.svg",
+    "static/media/dropdown-up.svg": "./static/media/dropdown-up.782efbdec3843ebc2053.svg",
+    "static/media/edit.svg": "./static/media/edit.39ec76b7b6542cdd3394.svg",
+    "static/media/checkmark.svg": "./static/media/checkmark.3a4ab4c7604245537936.svg",
+    "static/media/facebook.svg": "./static/media/facebook.984d5bad6601bf5c6c36.svg",
+    "index.html": "./index.html",
+    "main.fade87d6.css.map": "./static/css/main.fade87d6.css.map",
+    "main.e3ee0bb9.js.map": "./static/js/main.e3ee0bb9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fade87d6.css",
+    "static/js/main.e3ee0bb9.js"
+  ]
+}

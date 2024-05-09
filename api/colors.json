@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "name": "White",
+    "description": "White flowers and pots"
+  },
+  {
+    "id": 2,
+    "name": "Red",
+    "description": "Red flowers and pots"
+  },
+  {
+    "id": 3,
+    "name": "Green",
+    "description": "Green flowers and pots"
+  },
+  {
+    "id": 4,
+    "name": "Yellow",
+    "description": "Yellow flowers and pots"
+  },
+  {
+    "id": 5,
+    "name": "Violet",
+    "description": "Violet flowers and pots"
+  },
+  {
+    "id": 6,
+    "name": "Pink",
+    "description": "Pink flowers and pots"
+  },
+  {
+    "id": 7,
+    "name": "Blue",
+    "description": "Blue flowers and pots"
+  },
+  {
+    "id": 8,
+    "name": "Orange",
+    "description": "Orange flowers and pots"
+  }
+]
