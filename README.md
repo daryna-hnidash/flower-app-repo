@@ -17,8 +17,10 @@ These features are designed to enhance the shopping experience and make it conve
 - Redux, Redux Toolkit, Redux Persist
 - TypeScript
 - CSS/SCSS
+  
 
 **[DEMO LINK](https://daryna-hnidash.github.io/flower-app-repo)**
+**[Figma design](https://www.figma.com/file/3SkjdKxGoIuxHU2CGgvV3r/Team-project--LilyLove?type=design&node-id=0-1&mode=design)**
 
 
 ***Temporary Server Unavailability Notice:***
