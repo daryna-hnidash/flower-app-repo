@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.fade87d6.css",
-    "main.js": "./static/js/main.ffc3c07a.js",
+    "main.js": "./static/js/main.2013c8a0.js",
     "static/media/header.jpg": "./static/media/header.464be4c95040075211ec.jpg",
     "static/media/Outfit-VariableFont_wght.ttf": "./static/media/Outfit-VariableFont_wght.00c2ed1a3bf798b0da27.ttf",
     "static/media/SedanSC-Regular.ttf": "./static/media/SedanSC-Regular.3eeb672805f1b8adae1d.ttf",
@@ -34,10 +34,10 @@
     "static/media/facebook.svg": "./static/media/facebook.984d5bad6601bf5c6c36.svg",
     "index.html": "./index.html",
     "main.fade87d6.css.map": "./static/css/main.fade87d6.css.map",
-    "main.ffc3c07a.js.map": "./static/js/main.ffc3c07a.js.map"
+    "main.2013c8a0.js.map": "./static/js/main.2013c8a0.js.map"
   },
   "entrypoints": [
     "static/css/main.fade87d6.css",
-    "static/js/main.ffc3c07a.js"
+    "static/js/main.2013c8a0.js"
   ]
 }
