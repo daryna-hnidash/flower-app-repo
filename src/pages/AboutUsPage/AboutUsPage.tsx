@@ -17,7 +17,7 @@ export function AboutUsPage() {
           </div>
 
           <img
-            src="/img/about-us-1.jpg"
+            src="./img/about-us-1.jpg"
             alt="Women with fresh flowers in the shop"
             className="about-us-page__img"
           />

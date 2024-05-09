@@ -1,6 +1,6 @@
 import { Product, ProductType } from "./types";
 
-const API_URL = "/api/";
+const API_URL = "./api/";
 
 export function getProducts(): Promise<Product[]> {
   return fetch(API_URL + "productsFromServer.json").then(res => res.json());
