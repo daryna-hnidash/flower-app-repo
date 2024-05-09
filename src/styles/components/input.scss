@@ -1,0 +1,63 @@
+@import "../../styles/vars.scss";
+
+.input {
+  width: 100%;
+  height: 56px;
+  padding: 15px 10px;
+  outline: none;
+  border: 1px solid $dark-pink;
+  border-radius: 10px;
+  background-color: transparent;
+  box-sizing: border-box;
+  color: $secondary-red;
+  font-size: 20px;
+
+  background-position: 10px center;
+  background-repeat: no-repeat;
+
+  &:focus {
+    border-color: $secondary-red;
+  }
+
+  &::placeholder {
+    color: $dark-pink;
+  }
+
+  $icons: ("person", "phone", "email", "password");
+
+  @each $icon in $icons {
+    &--#{$icon} {
+      padding: 15px 0 15px 42px;
+      background-image: url("../../img/icons/input/#{$icon}.svg");
+    }
+  }
+
+  &--search {
+    padding: 10px 5px 10px 44px;
+    width: 273px;
+    height: 44px;
+    color: $secondary-red;
+    font-size: 20px;
+    margin-right: 10px;
+
+    background-image: url("../../img/icons/input/search.svg");
+
+    &--white {
+      background-image: url("../../img/icons/input/search-white.svg");
+      color: $bg-color;
+      border-color: $bg-color;
+
+      &::placeholder {
+        color: $bg-color;
+      }
+
+      &:focus {
+        border-color: $bg-color;
+      }
+    }
+  }
+
+  &--error {
+    border-color: red;
+  }
+}

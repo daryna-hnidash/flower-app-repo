@@ -1,0 +1,93 @@
+@import '../../styles/vars.scss';
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.08);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  overflow: hidden;
+  overflow-y: auto;
+
+  animation: overlayFadeIn 0.3s ease-in-out;
+
+  &--order {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  &__wrapper {
+    max-width: 562px;
+    background-color: $bg-color;
+    border-radius: 5px;
+    padding: 24px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    position: relative;
+
+    animation: modalFadeIn 0.3s ease-in-out;
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    &--order {
+      justify-content: center;
+    }
+  }
+
+  &__close-btn {
+    background: none;
+    border: none;
+    font-size: 30px;
+    font-weight: 500;
+    width: 25px;
+    height: 28px;
+    background-image: url('../../img/icons/cross.svg');
+    background-size: cover;
+  }
+
+  &__text {
+    margin-bottom: 32px;
+    max-width: 90%;
+
+    &--order {
+      max-width: 100%;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 86px;
+  }
+
+  &__button {
+    text-align: center;
+  }
+}
+
+@keyframes modalFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-50%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes overlayFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

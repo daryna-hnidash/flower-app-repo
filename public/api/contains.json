@@ -1,0 +1,97 @@
+[
+  {
+    "id": 1,
+    "name": "Rose",
+    "description": "rose"
+  },
+  {
+    "id": 2,
+    "name": "Marigold",
+    "description": "marigold"
+  },
+  {
+    "id": 3,
+    "name": "Lily",
+    "description": "lily"
+  },
+  {
+    "id": 4,
+    "name": "Violet",
+    "description": "violet"
+  },
+  {
+    "id": 5,
+    "name": "Chamomile",
+    "description": "chamomile"
+  },
+  {
+    "id": 6,
+    "name": "Carnation",
+    "description": "carnation"
+  },
+  {
+    "id": 7,
+    "name": "Chrysanthemum",
+    "description": "chrysanthemum"
+  },
+  {
+    "id": 8,
+    "name": "Hydrangea",
+    "description": "hydrangea"
+  },
+  {
+    "id": 9,
+    "name": "Peony",
+    "description": "peony"
+  },
+  {
+    "id": 10,
+    "name": "Daisies",
+    "description": "daisies"
+  },
+  {
+    "id": 11,
+    "name": "Crotons",
+    "description": "crotons"
+  },
+  {
+    "id": 12,
+    "name": "Calathea",
+    "description": "Crotons"
+  },
+  {
+    "id": 13,
+    "name": "Boston",
+    "description": "boston"
+  },
+  {
+    "id": 14,
+    "name": "Fern",
+    "description": "fern"
+  },
+  {
+    "id": 15,
+    "name": "Ranunculus",
+    "description": "ranunculus"
+  },
+  {
+    "id": 16,
+    "name": "Boston fern",
+    "description": "boston-fern"
+  },
+  {
+    "id": 17,
+    "name": "English ivy",
+    "description": "english-ivy"
+  },
+  {
+    "id": 18,
+    "name": "Ficus benjamina",
+    "description": "ficus-benjamina"
+  },
+  {
+    "id": 19,
+    "name": "Anturium",
+    "description": "anturium"
+  }
+]

@@ -1,0 +1,31 @@
+@import "./vars.scss";
+
+@mixin hover($property, $toValue) {
+  transition: #{$property}, #{$transition-speed};
+  &:hover {
+    #{$property}: $toValue;
+  }
+}
+
+@mixin onSmallDesktop {
+  @media (max-width: 1440px) {
+    @content;
+  }
+}
+
+@mixin onTablet {
+  @media (max-width: 960px) {
+    @content;
+  }
+}
+
+@mixin onMobile {
+  @media (max-width: 640px) {
+    @content;
+  }
+}
+
+@mixin bg-img-center-norepeat {
+  background-position: center;
+  background-repeat: no-repeat;
+}

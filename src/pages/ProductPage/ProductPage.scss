@@ -1,0 +1,132 @@
+@import "../../styles/typography.scss";
+@import "../../styles/vars.scss";
+@import "../../styles/mixins.scss";
+
+.product-page {
+  &__top {
+    margin-bottom: 60px;
+  }
+
+  &__title {
+    @extend %h2;
+    margin-bottom: 20px;
+  }
+
+  &__content {
+    margin-bottom: 72px;
+  }
+
+  &__info {
+    margin-bottom: 50px;
+    display: flex;
+    gap: 82px;
+  }
+
+  &__img-container {
+    position: relative;
+    height: 440px;
+  }
+
+  &__fav-btn {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    width: 58px;
+    height: 58px;
+    border-radius: 10px;
+    opacity: 0.7;
+    border: none;
+
+    background-image: url("../../img/icons/heart-btn.svg");
+    @include bg-img-center-norepeat;
+
+    &:hover {
+      @include hover(opacity, 1);
+    }
+
+    &--active {
+      background-image: url("../../img/icons/heart-btn-fill.svg");
+    }
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__description {
+    width: 692px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__summary {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 26px;
+  }
+
+  &__h1,
+  &__price {
+    @extend %h1;
+  }
+
+  &__description-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  &__quantity {
+    @extend %h4;
+    text-align: center;
+  }
+
+  &__quantity-text {
+    font-size: 19px;
+  }
+
+  &__buttons {
+    width: 114px;
+    height: 58px;
+    padding: 14px;
+    border-radius: 10px;
+    border: 1px solid $secondary-red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &--disabled {
+      color: gray;
+      border-color: gray;
+      pointer-events: none;
+      cursor: default;
+    }
+  }
+
+  &__min-btn,
+  &__plus-btn {
+    font-family: "Outfit";
+    border: none;
+    background-color: transparent;
+    color: inherit;
+    display: flex;
+    align-items: center;
+
+    &:hover {
+      color: $main-red;
+    }
+  }
+
+  &__h3 {
+    @extend %h3;
+    margin-bottom: 20px;
+  }
+
+  &__recommended-container {
+    display: flex;
+    justify-content: space-between;
+  }
+}

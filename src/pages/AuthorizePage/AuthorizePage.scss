@@ -1,0 +1,81 @@
+@import "../../styles/typography.scss";
+@import "../../styles/vars.scss";
+
+.authorize-page {
+  padding-top: 18px;
+
+  &__container {
+    display: flex;
+    max-width: 1172px;
+    height: 660px;
+    margin: 0 auto;
+    margin-bottom: 62px;
+  }
+
+  &__left {
+    padding: 98px 48px;
+    max-width: 454px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: $bg-color;
+    background-color: $main-red;
+    border-radius: 10px;
+  }
+
+  &__text {
+    display: grid;
+    gap: 6px;
+  }
+
+  &__title {
+    @extend %h2;
+    text-align: center;
+
+    &--right {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__p {
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+  }
+
+  &__fieldset {
+    display: flex;
+    gap: 10px;
+  }
+
+  &__input-block {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  &__error {
+    position: absolute;
+    font-size: 13px;
+    color: red;
+    top: 56px;
+  }
+
+  &__right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 718px;
+    padding: 60px 72px;
+    border-radius: 10px;
+    border: 1px solid $dark-pink;
+  }
+
+  &__form {
+    display: grid;
+    gap: 24px;
+    margin-bottom: 30px;
+  }
+}

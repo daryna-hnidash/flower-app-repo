@@ -1,0 +1,23 @@
+@import "../../styles/typography.scss";
+@import "../../styles/vars.scss";
+
+.logo {
+  color: $main-red;
+  width: 276px;
+  height: 173px;
+  display: flex;
+
+  background-image: url(../../img/logo-bg.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  &--white {
+    background-image: url(../../img/logo-bg-white.svg);
+  }
+
+  &__title {
+    font-family: "Sedan SC", serif;
+    @extend %h1;
+    margin: auto;
+  }
+}

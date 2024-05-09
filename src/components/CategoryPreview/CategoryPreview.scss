@@ -1,0 +1,60 @@
+@import "../../styles/typography.scss";
+
+.category-preview {
+  height: 564px;
+
+  &__wrapper {
+    position: relative;
+
+    &--reverse {
+      display: flex;
+      flex-direction: row-reverse;
+    }
+
+    &--isFirst {
+      flex-direction: row;
+    }
+  }
+
+  &__content {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    &--reverse {
+      flex-direction: row-reverse;
+    }
+  }
+
+  &__gallery {
+    display: flex;
+    align-items: flex-end;
+    gap: 30px;
+
+    &--reverse {
+      flex-direction: row-reverse;
+    }
+  }
+
+  &__title {
+    @extend %h2;
+    max-width: 630px;
+
+    &--margin-left {
+      margin-left: 424px;
+    }
+    &--margin-right {
+      text-align: right;
+      margin-right: 424px;
+    }
+  }
+
+  &__btn {
+    margin-bottom: 142px;
+    margin-top: 347px;
+  }
+}

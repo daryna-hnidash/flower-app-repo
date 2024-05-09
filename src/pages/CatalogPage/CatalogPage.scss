@@ -1,0 +1,56 @@
+@import '../../styles/typography.scss';
+@import '../../styles/vars.scss';
+
+.catalog-page {
+  padding-bottom: 66px;
+
+  &__title {
+    @extend %h2;
+  }
+
+  &__top {
+    margin-bottom: 55px;
+  }
+
+  &__filtres {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 40px;
+  }
+
+  &__catalog {
+    display: grid;
+    grid-template-columns: repeat(3, min-content);
+    gap: 65px;
+    margin-bottom: 64px;
+  }
+
+  &__reset-btn {
+    // margin-left: 20px;
+    // margin: 0 auto;
+    padding-inline: 5px;
+    background-color: $bg-color;
+    border: 1px solid gray;
+    border-radius: 10px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-position: bottom 0 right 8px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    z-index: 0;
+    font-size: 14px;
+    font-weight: 300;
+    // line-height: 20.16px;
+    text-align: left;
+    color: gray;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    &:hover {
+      background-color: gray;
+      color: $bg-color;
+    }
+  }
+}

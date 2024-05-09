@@ -1,0 +1,77 @@
+@import "../../styles/typography.scss";
+@import "../../styles/vars.scss";
+@import "../../styles/mixins.scss";
+
+.profile {
+  padding-bottom: 108px;
+
+  &__title {
+    @extend %h2;
+    padding-bottom: 26px;
+  }
+
+  &__subtitle {
+    font-size: 24px;
+    padding: 27px 10px;
+    border-bottom: 1px solid $dark-pink;
+    margin-bottom: 24px;
+  }
+
+  &__info {
+    margin-bottom: 85px;
+  }
+
+  &__block {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 72px;
+    margin-bottom: 26px;
+  }
+
+  &__field-title {
+    margin-bottom: 8px;
+  }
+
+  &__log-out {
+    display: flex;
+    gap: 20px;
+    background-color: $bg-color;
+    border: none;
+    color: $secondary-red;
+    font-size: 24px;
+  }
+
+  &__log-out-icon {
+    display: block;
+    width: 34px;
+    height: 28px;
+    background-image: url("../../img/icons/logout.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  &__orders {
+    display: grid;
+    gap: 24px;
+  }
+
+  &__order {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__order-info {
+    display: flex;
+    gap: 10px;
+  }
+
+  &__order-id {
+    font-weight: 500;
+  }
+
+  &__order-total {
+    font-weight: 500;
+    margin-left: 60px;
+  }
+}

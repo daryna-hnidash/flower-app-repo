@@ -1,0 +1,73 @@
+@import '../../styles/vars.scss';
+@import '../../styles/mixins.scss';
+@import '../../styles/typography.scss';
+
+.pagination {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+
+  &__arrow-btn {
+    height: 44px;
+    width: 44px;
+    border-radius: 10px;
+    border: 1px solid $dark-pink;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+      border-color: $main-red;
+    }
+
+    &--disabled {
+      pointer-events: none;
+    }
+  }
+
+  &__arrow-inside {
+    width: 25px;
+    height: 25px;
+    background-color: $dark-pink;
+    border-radius: 10px;
+    background-image: url('../../img/icons/arrow-right.svg');
+    background-size: 80%;
+    @include bg-img-center-norepeat;
+
+    &--prev {
+      transform: rotate(180deg);
+    }
+  }
+
+  &__pages {
+    display: flex;
+  }
+
+  &__page {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    background-color: transparent;
+    border: none;
+    color: $dark-pink;
+    align-items: center;
+    justify-content: center;
+    @extend %h4;
+
+    &:hover {
+      border: 1px solid $dark-pink;
+      border-radius: 10px;
+      color: $main-red;
+    }
+
+    &--active {
+      color: $main-red;
+    }
+  }
+}
+
+.pagination__arrow-btn:hover .pagination__arrow-inside {
+  background-color: $main-red;
+}

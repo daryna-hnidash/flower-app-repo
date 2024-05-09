@@ -1,0 +1,23 @@
+@import "../../styles/typography.scss";
+@import "../../styles/vars.scss";
+
+.cart-page {
+  &__top {
+    margin-bottom: 55px;
+  }
+
+  &__title {
+    @extend %h2;
+  }
+
+  &__content {
+    display: flex;
+    gap: 108px;
+    margin-bottom: 74px;
+  }
+
+  &__items {
+    display: grid;
+    gap: 40px;
+  }
+}

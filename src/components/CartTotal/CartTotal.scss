@@ -1,0 +1,64 @@
+@import "../../styles/typography.scss";
+@import "../../styles/vars.scss";
+
+.cart-total {
+  min-width: 485px;
+
+  &__title {
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 8px;
+  }
+
+  &__content {
+    border: 2px solid $dark-pink;
+    border-radius: 10px;
+    padding: 40px;
+  }
+
+  &__items-list {
+    display: grid;
+    gap: 15px;
+    margin-bottom: 54px;
+    padding-inline: 12px;
+  }
+
+  &__li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__item-title,
+  &__price {
+    @extend %h4;
+  }
+
+  &__description {
+    font-size: 20px;
+    display: grid;
+    gap: 20px;
+  }
+
+  &__delivery {
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  &__separator {
+    height: 2px;
+    width: 100%;
+    background-color: $dark-pink;
+    margin-bottom: 42px;
+  }
+
+  &__description {
+    padding-inline: 12px;
+    margin-bottom: 46px;
+  }
+
+  &__btn {
+    width: min-content;
+    margin: 0 auto;
+  }
+}

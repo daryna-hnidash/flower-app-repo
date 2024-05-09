@@ -1,0 +1,82 @@
+@import "../../styles/typography.scss";
+@import "../../styles/vars.scss";
+@import "../../styles/mixins.scss";
+
+.product-card {
+  width: 390px;
+  height: 570px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &--small {
+    width: 284px;
+    height: 426px;
+  }
+
+  &__img-container {
+    position: relative;
+    height: 440px;
+    width: 390px;
+
+    &--small {
+      height: 298px;
+      width: 285px;
+    }
+  }
+
+  &__fav-btn {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    width: 58px;
+    height: 58px;
+    border-radius: 10px;
+    opacity: 0.7;
+    border: none;
+
+    background-image: url("../../img/icons/heart-btn.svg");
+    @include bg-img-center-norepeat;
+
+    &:hover {
+      @include hover(opacity, 1);
+    }
+
+    &--active {
+      background-image: url("../../img/icons/heart-btn-fill.svg");
+    }
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__summary {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__h3 {
+    @extend %h3;
+
+    &--small {
+      font-size: 24px;
+    }
+  }
+
+  &__price {
+    @extend %h3;
+    font-size: 36px;
+
+    &--small {
+      font-size: 24px;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+}

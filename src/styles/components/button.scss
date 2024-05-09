@@ -1,0 +1,113 @@
+.button {
+  width: 355px;
+  height: 58px;
+  height: min-content;
+  padding: 10px 16px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $bg-color;
+  font-size: 30px;
+  font-weight: 400;
+  background-color: $main-red;
+  border: 2px solid $main-red;
+
+  box-sizing: border-box;
+
+  &:hover {
+    @include hover(border-color, $bg-color);
+  }
+
+  &:active,
+  &--active {
+    background-color: $secondary-red;
+    border-color: $secondary-red;
+  }
+
+  &--wide {
+    width: 574px;
+  }
+
+  &--with-arrow {
+    width: 244px;
+    justify-content: space-between;
+  }
+
+  &--small {
+    height: 56px;
+    width: 196px;
+    padding: 10px;
+    font-size: 24px;
+  }
+
+  &__arrow {
+    display: block;
+    width: 36px;
+    height: 36px;
+    background-image: url('../../img/icons/arrow-right.svg');
+    background-size: contain;
+    @include bg-img-center-norepeat;
+
+    &--small {
+      width: 28px;
+      height: 28px;
+    }
+
+    &--details {
+      background-image: url('../../img/icons/arrow-right-red.svg');
+    }
+  }
+
+  &--white {
+    color: $main-red;
+    background-color: $bg-color;
+    box-shadow: 0 0 0 1px $main-red;
+    border: 2px solid transparent;
+
+    &:hover {
+      @include hover(border-color, $main-red);
+    }
+  }
+
+  &--disabled {
+    background-color: $dark-pink;
+    border: 2px solid $dark-pink;
+    pointer-events: none;
+    cursor: not-allowed;
+  }
+
+  &--cart {
+    width: 76px;
+    height: 100%;
+    background-image: url('../../img/icons/cart-white.svg');
+    @include bg-img-center-norepeat;
+    background-size: 40%;
+
+    &--small {
+      height: 56px;
+      width: 54px;
+    }
+
+    &--active {
+      background-image: url('../../img/icons/cart.svg');
+      background-color: $bg-color;
+      border-color: $main-red;
+
+      &:hover {
+        background-color: $secondary-red;
+        background-image: url('../../img/icons/cart-white.svg');
+      }
+    }
+    &--not-active {
+      background-image: url('../../img/icons/cart.svg');
+      background-color: $bg-color;
+      border-color: $main-red;
+
+      &:hover {
+        background-color: $secondary-red;
+        background-image: url('../../img/icons/cart-white.svg');
+      }
+    }
+  }
+}

@@ -1,0 +1,70 @@
+@font-face {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Outfit"), url(./fonts/Outfit-VariableFont_wght.ttf),
+    format("truetype");
+}
+
+@font-face {
+  font-family: "Outfit";
+  font-style: bold;
+  font-weight: 500;
+  src: local("Outfit"), url(./fonts/Outfit-VariableFont_wght.ttf),
+    format("truetype");
+}
+
+@font-face {
+  font-family: "Sedan SC";
+  font-style: normal;
+  font-weight: 300;
+  src: local("Sedan SC"), url(./fonts/SedanSC-Regular.ttf),
+    format("truetype");
+}
+@font-face {
+  font-family: "Sedan SC";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Sedan SC"), url(./fonts/SedanSC-Regular.ttf),
+    format("truetype");
+}
+
+@font-face {
+  font-family: "Sedan SC";
+  font-style: bold;
+  font-weight: 500;
+  src: local("Sedan SC"), url(./fonts/SedanSC-Regular.ttf),
+    format("truetype");
+}
+
+%title {
+  font-family: "Sedan SC", serif;
+  font-weight: 400;
+}
+
+%h1 {
+  @extend %title;
+  font-size: 64px;
+}
+
+%h2 {
+  @extend %title;
+  font-size: 48px;
+}
+
+%h3 {
+  @extend %title;
+  font-size: 32px;
+}
+
+%h4 {
+  @extend %title;
+  font-size: 24px;
+}
+
+%body-text {
+  font-family: "Outfit", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  color: #731104;
+}

@@ -1,0 +1,119 @@
+@import "../../styles/mixins.scss";
+@import "../../styles/vars.scss";
+@import "../../styles/typography.scss";
+
+.header {
+  &__wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__bottom {
+    padding: 48px 70px;
+    height: 448px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &--home-page {
+    height: 700px;
+    background-image: url("../../img/header.jpg");
+    background-size: cover;
+  }
+
+  &__title {
+    @extend %h2;
+    color: $bg-color;
+    max-width: 590px;
+  }
+}
+
+.top-bar {
+  display: flex;
+  align-items: center;
+
+  &__search-input {
+    padding: 10px 5px 10px 44px;
+    width: 273px;
+    height: 44px;
+    color: $secondary-red;
+    font-size: 20px;
+    margin-right: 10px;
+    outline: none;
+
+    border: 1px solid $dark-pink;
+    border-radius: 10px;
+    background-color: transparent;
+    box-sizing: border-box;
+
+    background-image: url("../../img/icons/input/search.svg");
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+
+    &:focus {
+      border-color: $secondary-red;
+    }
+
+    &::placeholder {
+      color: $dark-pink;
+    }
+
+    &--white {
+      background-image: url("../../img/icons/input/search-white.svg");
+      color: $bg-color;
+      border-color: $bg-color;
+
+      &::placeholder {
+        color: $bg-color;
+      }
+
+      &:focus {
+        border-color: $bg-color;
+      }
+    }
+  }
+
+  &__icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 10px;
+    display: block;
+
+    @include bg-img-center-norepeat;
+
+    &:hover {
+      @include hover(transform, scale(1.1));
+    }
+
+    $icons: ("heart", "person", "cart");
+
+    @each $var in $icons {
+      $red-icon: url("../../img/icons/#{$var}.svg");
+      $white-icon: url("../../img/icons/#{$var}-white.svg");
+
+      &--#{$var} {
+        background-image: $red-icon;
+
+        &--white {
+          background-image: $white-icon;
+        }
+
+        &--active {
+          background-color: $main-red;
+          background-image: $white-icon;
+
+          &:hover {
+            @include hover(transform, scale(1));
+          }
+        }
+      }
+    }
+  }
+}

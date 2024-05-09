@@ -1,0 +1,28 @@
+  .quantity {
+    @extend %h4;
+    
+    &__buttons {
+    width: 114px;
+    height: 58px;
+    padding: 14px;
+    border-radius: 10px;
+    border: 1px solid $secondary-red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__min-btn,
+  &__plus-btn {
+    font-family: "Outfit";
+    border: none;
+    background-color: transparent;
+    color: $secondary-red;
+    display: flex;
+    align-items: center;
+    
+    &:hover {
+      color: $main-red;
+    }
+  }
+}

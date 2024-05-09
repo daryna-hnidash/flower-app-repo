@@ -1,0 +1,50 @@
+@import '../../styles/typography.scss';
+@import '../../styles/vars.scss';
+
+.about-us-page {
+  padding-bottom: 50px;
+
+  &__title {
+    @extend %h2;
+    margin-bottom: 10px;
+
+    &--main {
+      margin-bottom: 35px;
+    }
+
+    &--h3 {
+      @extend %h3;
+    }
+  }
+
+  &__article {
+    &--2 {
+      margin-bottom: 68px;
+    }
+  }
+
+  &__content {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 54px;
+  }
+
+  &__text {
+    width: 638px;
+  }
+
+  &__benefits-list {
+    display: grid;
+    gap: 30px;
+  }
+
+  &__benefits-item {
+    display: block;
+    padding: 10px;
+    border-bottom: 1px solid $dark-pink;
+  }
+
+  &__benefit {
+    font-weight: 600;
+  }
+}

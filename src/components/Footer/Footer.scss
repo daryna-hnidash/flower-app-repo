@@ -1,0 +1,81 @@
+@import '../../styles/vars.scss';
+@import '../../styles/mixins.scss';
+
+.footer {
+  background-color: $main-red;
+
+  &__content {
+    display: flex;
+    padding: 34px 158px;
+    justify-content: space-between;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  &__socials-list {
+    display: flex;
+    gap: 40px;
+    align-self: center;
+  }
+
+  &__link {
+    display: block;
+    width: 32px;
+    height: 32px;
+    @include hover(transform, scale(1.1));
+
+    @include bg-img-center-norepeat;
+
+    $socials: ('facebook', 'telegram', 'instagram');
+
+    @each $item in $socials {
+      &--#{$item} {
+        background-image: url('../../img/icons/#{$item}.svg');
+      }
+    }
+  }
+
+  &__links {
+    display: flex;
+    gap: 170px;
+  }
+
+  &__other-links {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 25.2px;
+    text-align: left;
+    color: $bg-color;
+  }
+
+  &__nav-title {
+    color: $bg-color;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  &__address {
+    color: $bg-color;
+    font-style: normal;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-weight: 500;
+    max-width: 208px;
+  }
+
+  &__address-item {
+    &--phone {
+      font-weight: 400;
+    }
+
+    &:hover {
+      @include hover(text-decoration, underline);
+    }
+  }
+
+  &__phone {
+    font-weight: 400;
+  }
+}

@@ -1,0 +1,27 @@
+@import '../../styles/vars.scss';
+
+.reset-btn {
+  padding-inline: 5px;
+  background-color: $bg-color;
+  border: 1px solid gray;
+  border-radius: 10px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-position: bottom 0 right 8px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  z-index: 0;
+  font-size: 14px;
+  font-weight: 300;
+  text-align: left;
+  color: gray;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  &:hover {
+    background-color: gray;
+    color: $bg-color;
+  }
+}
