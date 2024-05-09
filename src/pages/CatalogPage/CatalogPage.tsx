@@ -1,5 +1,5 @@
 import React, { useContext, useEffect } from 'react';
-import { useAppSelector } from '../../app/hooks';
+import { useAppDispatch, useAppSelector } from '../../app/hooks';
 import { Breadcrumbs } from '../../components/Breadcrumbs';
 import { Pagination } from '../../components/Pagination';
 import { ProductCard } from '../../components/ProductCard';
@@ -11,6 +11,8 @@ import { Loader } from '../../components/Loader';
 import { Select } from '../../components/Select';
 import { colorsArr, Product, productTypesArr, seasonsArr, sizesArr } from '../../helpers/types';
 import { useSearchParams } from 'react-router-dom';
+import { init } from '../../features/allProductsSlice';
+
 
 export enum SortByPriceParams {
   None = '',
@@ -30,11 +32,16 @@ export function CatalogPage() {
   const price = searchParams.get('price') || "";
   const size = searchParams.get('size') || "";
   const season = searchParams.get('season') || "";
+  const dispatch = useAppDispatch();
 
   useEffect(() => {
     searchParams.set('page', '1');
   }, [searchParams])
   const { query } = useContext(globalContext);
+
+  useEffect(() => {
+    dispatch(init());
+  }, [])
 
   useEffect(() => {
     window.scrollTo(0, 0)
